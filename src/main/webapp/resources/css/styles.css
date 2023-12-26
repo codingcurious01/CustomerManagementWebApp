@@ -1,0 +1,168 @@
+/* Your custom CSS styles go here */
+body {
+	background-color: white;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+/* NavBar background styles  */
+.gradient-background {
+	/* background: radial-gradient(ellipse at center, #2D9D38 0%, #090979 100%); */
+	/* background: linear-gradient(to bottom right, #2D9D38, #090979); */
+	background: conic-gradient(#2D9D38, white, #090979);
+}
+
+/* Center the banner */
+#banner-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+#banner {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	width: 55%;
+}
+
+/* Admin login form CSS styles */
+.admin-center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh; /* Adjust as needed */
+}
+
+.admin-centered-form-container {
+	background-color: white;
+	width: 500px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 5px 10px #888888;
+}
+
+/* style to eye icon in password box  */
+.bi {
+	color: black;
+}
+
+.admin-centered-form-container label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.admin-centered-form-container input, .admin-centered-form-container button
+	{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	border-radius: 10px
+}
+
+.admin-centered-form-container button {
+	width: 50%;
+}
+
+/* styles for the password toggle (SHOW or HIDE) */
+.admin-password-container {
+	position: relative;
+}
+
+.admin-password-toggle {
+	position: absolute;
+	top: 62%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+/* Submit buttons hover effect  */
+.btnSubmit:hover {
+	background-color: #2D9D38;
+	background-image: linear-gradient(340deg, #2D9D38 0%, white 45%, #090979 100%);
+	color: black;
+	/* background: conic-gradient(#2D9D38, white, #090979);
+	color: black; */
+}
+
+/* star color for mandatory fields  */
+.mandatoryField {
+	color: red;
+}
+
+/* Customer Form Styles  */
+/* Center the form controls */
+.customer-form-center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh; /* Adjust the height as needed */
+	margin-top: 10px;
+	/* Adjust the top margin to bring it closer to the navbar */
+}
+
+.customer-centered-form-container {
+	max-width: 400px; /* Adjust the maximum width as needed */
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 5px 10px #888888;
+}
+
+/* Adjusted spacing between form controls */
+.customer-centered-form-container input,
+	.customer-centered-form-container select {
+	margin-bottom: 10px; /* Reduce the margin for a more compact form */
+	font-size: 20px;
+	border-radius: 10px;
+	border-color: black;
+}
+
+.customer-centered-form-container button {
+	border-radius: 10px;
+	width: 50%;
+}
+
+/* Styled labels for better alignment */
+.customer-centered-form-container label {
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+.customer-form-radio-buttons label {
+	margin-right: 40px;
+}
+
+/* Increase the size of the radio button */
+input[type="radio"] {
+	transform: scale(1.5); /* Adjust the scale factor as needed */
+	margin-left: 3px;
+}
+
+/* Style the Go to Top button in footer */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #007bff; /* Blue */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* On hover, change background color */
+#myBtn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
